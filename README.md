@@ -1,0 +1,4 @@
+sendmail
+========
+
+&lt;?php if(isset($_POST[&#39;submit&#39;])) {  $to = &quot;fanzcakepthx@gmail.com&quot;; $subject = &quot;Pemesanan&quot;; $name_field = $_POST[&#39;name&#39;]; $alamat lengkap_field = $_POST[&#39;alamat lengkap&#39;]; $kota anda_field = $_POST[&#39;kota anda&#39;]; $email anda_field = $_POST[&#39;email anda&#39;]; $pesan = $_POST[&#39;pesan&#39;];   $body = &quot;From: $name_field\n Alamat Lengkap: $alamat lengkap_field\n Kota Anda: $kota anda_field\n E-mail: email anda_field\n pesan:\n $message&quot;;   echo &quot;Data has been submitted to $to!&quot;; mail($to, $subject, $body);  } else {  echo &quot;blarg!&quot;;  } ?&gt; 
